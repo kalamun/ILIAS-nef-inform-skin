@@ -1,0 +1,68 @@
+.dropdown .btn {
+	text-align: left;
+}
+
+.dropdown hr {
+	margin: @padding-large-vertical 0;
+}
+
+.dropdown h4 {
+	margin: @padding-base-vertical 0;
+}
+
+ul.dropdown-menu {
+	background-color: @dropdown-bg;
+	font-weight: normal;
+	border: 0 none;
+	right: 0 !important;
+	top: 5px !important;
+	left: auto !important;
+	.box-shadow(3px 9px 9px 0 rgba(0,0,0,0.3));
+	// Links within the dropdown menu
+	> li {
+		padding: 0;
+
+		> .btn {
+			display: block;
+			width: 100%;
+			clear: both;
+			padding:3px 10px;
+			font-weight: normal;
+			font-size: @il-font-size-dropdown;
+			line-height: @line-height-base;
+			background-color: @dropdown-link-bg;
+			color: @dropdown-link-color;
+			white-space: nowrap; // prevent links from randomly breaking onto new lines
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				color: @dropdown-link-hover-color;
+				background-color: @dropdown-link-hover-bg;
+			}
+		}
+	}
+}
+
+//Note, this is a rather nasty fix for #27751
+//Should be removed in upcoming versions.
+.il-maincontrols-slate-content{
+	.dropdown-menu{
+		right: 0;
+		left: inherit;
+	}
+}
+
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus{
+	background-color: transparent !important;
+	border: transparent !important;
+	color: black !important;
+	-webkit-box-shadow: none;
+}
+
+.ilobjforumgui ul.dropdown-menu{
+	top: auto !important;
+}
+
+.il-panel-listing-std-container ul.dropdown-menu {
+	top: 13px !important;
+}

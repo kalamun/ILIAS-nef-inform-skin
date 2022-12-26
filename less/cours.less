@@ -1,0 +1,269 @@
+.ilrepositorygui{
+
+	#il_center_col{
+	    /*margin-left: 5px;
+    	margin-right: -5px;*/
+	}
+	.ilContainerBlock {
+    	width: 100%;
+    	margin: 0px;
+    	margin-left: 5px;
+	}	
+	.ilNewObjectSelector
+	{
+		margin-top: 20px;
+		margin-bottom: -20px;
+	    margin-left: 0px;
+        width: 100%;
+	}
+
+	.ilToolbar{
+		//margin: 20px 5px;
+		margin: 20px 5px -1px 5px;
+    	padding-top: 11px;
+	}
+	#ilAdvSelListAnchorText_asl{
+		margin-top: 11px;
+	}
+
+	.glyphicon-chevron-right{
+		display: none;
+	}
+
+	.ilHeaderDesc{
+		font-size: 10px;
+	    letter-spacing: 1.5px;
+	    line-height: 16px;
+	    color: @Grey-color-87;
+        text-transform: uppercase;
+	}
+	input[name="search_term"],input[name="il_tags"] {
+		height: 30px;
+	}
+
+	.il_ContainerListItem{
+		.dropdown-toggle{
+	    background-image: url("@{il-standard-icon-path}icon_more.svg") !important;
+	    background-repeat: no-repeat;
+	    background-color: transparent !important;
+	    height: 8px;
+	    width: 24px;
+	    border: none;
+	    border-radius: unset !important;
+	    &:hover,
+	    &:active,
+	    &:focus{
+	        background-color: transparent !important;
+	    }
+
+	    span{
+	        display: none !important;
+	    }
+	    
+		}
+		.btn-group{
+		    margin-right: 20px;
+		    margin-top: 20px;
+		    .open > .dropdown-toggle.btn-default{
+		            background-color: transparent !important;
+		            &:hover,
+		            &:active,
+		            &:focus {
+		                background-color: transparent !important;
+		            }
+		        }
+		}
+	}
+
+	tr.forum-unread{
+	background-color: @secondary-color-38 !important;
+	border: 2px solid @secondary-color-67;
+	font-weight: 600;
+	}
+ 	.table > thead > tr > th {
+        border-bottom: none;
+    }
+
+//end	
+}
+.no-right-block{
+	.col-sm-9{
+		width: 100%;
+	}
+}
+//form-details
+.ilobjforumgui{
+	.ilFrmBottomToolbar{
+		margin-top: -20px;
+	}
+	.ilTabsContentOuter{
+		//background-color: white;
+	    //margin: 0 20px;
+	}
+	#ilFrmPostList{
+		margin: 0px 5px;
+		padding: 15px;
+		.ilFrmPostRow{
+			position: relative;
+	    	border-top: none;
+		}
+		.ilFrmPostImage{
+			overflow: initial;
+		    position: absolute;
+		    display: table-cell;
+		    vertical-align: middle;
+		    img {
+			 	width: 30px;
+			    border-radius: 50%;
+			    padding: initial !important;
+		        margin: 5px 20px 5px 0px;
+		    }
+		}
+		.ilFrmPostContentContainer{
+		    width: 100%;
+		    .ilFrmPostHeader{
+		    	padding-top: 11px;
+		    	span.small{
+		    		font-size: 14px;
+				   font-weight: 600;
+				   letter-spacing: 0.25px;
+				   line-height: 20px;
+				   padding-left: 40px;
+				   color:@Grey-color-87;
+		    	}
+		    }
+		    .ilFrmPostTitle{
+		    	color: @grey;
+			    font-size: 16px;
+			    font-weight: bold;
+			    letter-spacing: 0.12px;
+			    line-height: 18px;
+		    }
+		    .ilFrmPostContent{
+		    	color: @Grey-color-87;
+			  	font-size: 14px;
+			  	letter-spacing: 0.25px;
+			  	line-height: 20px;
+		    }
+		    .ilFrmPostAttachmentsContainer{
+		    	border-top: 1px solid rgba(38,38,38,0.3);
+		    	color: @Grey-color-87;
+			  	font-size: 10px;
+			  	letter-spacing: 0.33px;
+			  	line-height: 16px;
+			    padding-top: 11px;
+			    a{
+			    	height: 30.75px;
+				    border: 0.75px solid @Grey-color-87;
+				    border-radius: 15px;
+				    display: inline-block;
+				    padding: 10px;
+				    text-align: center;
+				    color: @grey;
+				    font-size: 10.5px;
+				    font-weight: 500;
+				    letter-spacing: 0.94px;
+				    line-height: 12px;
+			    }
+		    }
+
+		}
+	}
+
+	//btn style
+	.il-viewcontrol-mode{
+		display: none;
+	}
+	.il-viewcontrol-sortation{
+		.dropdown-toggle{
+			all: unset;
+		}
+		.dropdown-toggle{
+			height: 36px;
+		    border-radius: 5px;
+		    background-color: #ecebeb;
+		    padding: 0px 13px;
+		    letter-spacing: 0.25px;
+		    line-height: 20px;
+		    font-size: 12px !important;
+			color: @Grey-color-87;
+			display: table-cell;
+		    vertical-align: middle;
+		    font-weight: 500;
+		    &:after{
+		    	content:"";
+		    	display: inline-block;
+			    width: 0;
+			    height: 0;
+			    margin-left: 2px;
+			    vertical-align: middle;
+			    border-top: 4px dashed;
+			    border-top: 4px solid \9;
+			    border-right: 4px solid transparent;
+			    border-left: 4px solid transparent;
+		    }
+		}
+	}
+	.split-btn{
+		.btn-default{
+			font-size: 12px !important;
+			color: @Grey-color-87;
+		}
+		.btn{
+			all: unset;
+		}
+		height: 36px;
+	    border-radius: 5px;
+	    background-color: #ecebeb;
+	    padding: 3px 11px;
+	    
+	    letter-spacing: 0.25px;
+	    line-height: 20px;
+	    
+	}//end .split-btn
+	.ilFrmBottomToolbar{
+		display: none;
+	}
+	.tblrow1 {
+		background-color: white;
+		box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%), 0 2px 1px -1px rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 16%);
+    	padding: 11px;
+	}
+	.tblrow2{
+		background-color: @table-background-color;
+		box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%), 0 2px 1px -1px rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 16%);
+    	padding: 11px;
+	}
+
+	.imagewizard_add, .imagewizard_remove{
+		border: 1px solid fade(#262626,87%);
+	    border-radius: 50%;
+	    width: 24px;
+	    height: 24px !important;
+	    .glyphicon{
+	    	top: -4px;
+		    font-weight: bold;
+	    }
+	}
+}
+
+//others pages
+.ilinfoscreengui
+{
+	.ilTabsContentOuter {
+	    background-color: white;
+	    padding: 0;
+	    margin: 20px;
+	    padding: 20px;
+	}
+	
+}
+
+.ilInfoScreenSec.form-horizontal {
+	.form-group {background-color: white !important;}
+}
+
+div.ilFrmPostAttachmentsContainer a.btn.btn-default{
+	color: white !important;
+	text-transform: uppercase;
+}

@@ -1,0 +1,735 @@
+//heading
+h2{
+    font-weight: 400;
+}
+
+/** header **/
+header{
+    .header-inner{
+        height:unset;
+        .il-logo {
+            //margin: 10px 0px 9px 20px;
+            width: unset;
+            height:unset;
+            img{
+                height: 60px;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+.breadcrumbs{
+    z-index: 1000;
+}
+
+.il-item-divider{
+     border-bottom: none !important;
+}
+
+//button
+#mainscrolldiv{
+    .btn{
+        font-weight: 500;
+        height: 30px;
+        display: table-cell;
+        vertical-align: middle;
+        outline: none;
+    }
+}
+
+
+.btn-bulky.engaged,.btn-bulky:hover,.link-bulky{border-radius: 4px;}
+.btn-bulky,.link-bulky{margin-bottom: 5px;}
+
+.nef-mainbar-element{
+    .il-maincontrols-slate{
+        .il-maincontrols-slate-content {
+            font-size: 16px;
+            margin-left: 37px;
+            .link-bulky{
+                padding: 0 !important;
+            }
+
+        }
+        .link-bulky .bulky-label{
+            padding: 0 !important;
+            font-size: 16px;
+        }
+    }
+    .il-link.link-bulky .bulky-label{
+        //padding: 0 !important;
+    }
+}
+.nef-SelectedMenuItem{
+    background-color: @il-mainbar-btn-bg-color-engaged !important;
+}
+/**body**/
+#fixed_content .il_HeaderInner
+{
+    //display: none;
+}
+/**panel**/
+.panel .panel-heading.ilHeader h2, .panel .panel-heading.ilBlockHeader h2,
+.panel .panel-heading.ilHeader h2.ilHeader, .panel .panel-heading.ilBlockHeader h2.ilHeader{
+    color: fade(#262626,87%);
+    font-size: 24px;
+    font-weight: 600;
+}
+.il-panel-listing-std-container > h2 {
+    color: fade(#262626,87%);
+    font-size: 24px;
+    font-weight: 600;
+}
+.il-item-group{
+    padding-top: 22px;
+}
+.panel-flex .il-viewcontrol-section{
+    margin-top: 31px !important;
+}
+.panel-primary{
+    .dropdown-menu{
+        top: 63%;
+        left: 70%;
+    }
+}
+.dropdown{
+    cursor: pointer;
+}
+#block_pdmail_0{
+    .il-item{
+        background-color: @secondary-color-38;
+        border: 1px solid @secondary-color-67;
+    }
+    .btn-link{
+        height: 100%;
+    }
+}
+//link
+a{
+    color: @global-background-color ;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+//layout
+/*.ilDashboardGUI{
+    margin-top: 20px;
+}*/
+img[alt="login"]{
+    border-radius: 50%;
+}
+
+.customed-layout{
+    background-color: white;
+}
+.container-fluid{
+    width: 100%;
+}
+//metabar
+.il-metabar-entries > .btn-bulky .glyphicon-bell{
+    background-image: url("@{il-standard-icon-path}Bell.svg");
+    color: transparent;
+    width: 22px;
+    margin-top: 9px;
+    margin-right: -6PX;
+    filter: invert(35%);
+}
+.il-metabar-entries > .btn-bulky .glyphicon-search{
+    background-image: url("@{il-standard-icon-path}Search.svg");
+    color: transparent;
+    width: 22px;
+    filter: invert(19%);
+}
+
+.glyphicon-arrow-down{
+    background-image: url("@{il-standard-icon-path}arrow_down.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 22px;
+    padding-top: 2px;
+}
+.glyphicon-logout{
+    background-image: url("@{il-standard-icon-path}icon-logout.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 22px;
+    margin-left: -3px;
+}
+
+.glyphicon-chevron-left
+{
+    background-image: url("@{il-standard-icon-path}arrow_left.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 22px;
+    margin-left: -3px;
+    top: -1px;
+}
+.glyphicon-chevron-right
+{
+    background-image: url("@{il-standard-icon-path}arrow_right.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 22px;
+    margin-left: -3px;
+    top: -1px;
+}
+.glyphicon-paperclip
+{
+    background-image: url("@{il-standard-icon-path}clip.png");
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 16px;
+    margin-left: -3px;
+    top: -9px;
+    height: 24px;
+}
+.glyphicon-plus-sign
+{
+    background-image: url("@{il-standard-icon-path}icon-plus-grey.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 21px;
+    margin-left: -3px;
+    top: -2px;
+    height: 24px;
+    background-size: 17px;
+}
+.glyphicon-calendar
+{
+    background-image: url("@{il-standard-icon-path}agenda-icon.svg");
+    background-repeat: no-repeat;
+    color: transparent;
+    width: 18px;
+    top: 0px;
+    height: 20px;
+    background-size: 17px;
+}
+.more{
+    text-indent: -9999px;
+}
+
+.icon.outlined.mail{
+    filter: invert(24%);
+    width: 23px;
+    height: 30px;
+}
+
+//new-title
+.nef-subtitle
+{   
+    width: 90%;
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* text-align: center; */
+    margin: 48PX 0 22px 16px;
+    padding-right: 11px;
+} 
+.panel
+{
+    position: relative;
+}
+.nef-titleicon {
+    img{
+        width: 22px;
+        height: 22px;
+        margin-top: -5px;
+        margin-right: 4px;
+        position: relative;
+    }
+}
+
+
+//mainbar menu
+.il-maincontrols{
+    background-color: @il-mainbar-btn-bg-color;
+    padding: 20px 5px 10px 5px;
+    overflow: auto;
+	width: @il-mainbar-btn-width;
+    .il-maincontrols-mainbar{
+        min-height: 90%;
+        .il-mainbar{
+            box-shadow : unset;
+            .il-mainbar-triggers{
+                font-size: 18px;
+                .bulky-label{
+                    color: #ffffff;
+                    text-align: left;
+                }
+                .btn-bulky, .il-link.link-bulky {
+                    align-items: baseline;
+                    margin-bottom: 7px;
+                    font-weight: 400;
+                }
+            }
+            .btn-bulky,
+            .link-bulky {
+                font-size: unset;
+                line-height: unset;
+                flex-flow: row;
+                justify-content: left;
+            }
+           .il-maincontrols-slate {
+                .btn-bulky,
+                .link-bulky {
+                    padding-left: 15px !important;
+                    height: unset !important;
+                }
+            }
+        }
+    }
+    //footer
+    .il-footer-content{
+        width: 100%;
+        font-size: 10px;
+        line-height: 15px;
+        text-align: center;
+        color: white;
+        .il-footer-links {
+            ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            li {
+                display: inline-block;
+                margin-right: 5px;
+                margin-left: 5px;
+                a {
+                    color: white;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+//mail_pages
+.nef-mailcontent{
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    .tab_options{
+        padding-bottom: 12px;
+    }
+    h1{
+        color: @Grey-color-87;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .media-heading{
+        padding: 20px 0px 5px 20px;
+    }
+    .form-horizontal{
+        .checkbox-inline{
+            padding-top: 3px;
+        }
+        .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"]{
+            margin-top: 2px;
+        }
+        .checkbox{
+            padding-top: 2px;
+        }
+    }
+    .ilToolbar{
+        margin-top: 10px;
+    }
+
+    table{
+        border: none;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.1), 0 1px 3px 0 rgba(0,0,0,0.16);
+    }
+
+    .ilTableCommandRowTop{
+        display: none;
+    }
+    .yui-skin-sam :first-of-type{
+        display: none;
+    }
+    .table-responsive{
+        margin: 20px 0;
+    }
+    .form-inline{
+        padding: 0 !important;
+    }
+    #ilTab{
+        padding-left:0px !important;
+        margin-left: 10px;
+        a{
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            line-height: 16px;
+            color: @Grey-color-87;
+        }
+    }
+    .ilToolbarSeparator{
+        display: none;
+    }
+    .btn-default{
+        vertical-align: -webkit-baseline-middle;
+    }
+    .ilFormCmds:first-child{
+        display: none;
+    }
+    input[value="Supprimer"]
+    {
+        margin-top: -34px;
+    }
+    .ilToolbarGroup:nth-child(3){
+        width: 100%;
+        margin-left: -91px;
+    }
+    .ilToolbarItems li:nth-child(5){
+        display: none;
+    }
+    .ilToolbar{
+        margin-bottom: unset !important;
+    }
+
+    form.form-horizontal{
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        letter-spacing: 0.25px;
+        line-height: 20px;
+        div.form-horizontal{
+            padding : unset !important;
+        }
+
+        .ilMailAvatar{
+            border-radius: 50%;
+            margin-top: -14px;
+        }
+
+        .control-label{
+            text-align: left;
+            font-weight: 600;
+            padding-left: 7%;
+            padding-top: 1px;
+        }
+
+        .attachment{
+            padding-top:20px;
+            &:before {
+                content : "";
+                position: absolute;
+                margin-left: 6%;
+                width: 88%;
+                border-top:1px solid rgba(38,38,38,0.3);
+                margin-top: -12px;
+            }
+        }
+    }
+}
+
+//page catalogue
+.ilFileDropTarget{
+    background-color: white;
+    margin-bottom: 0px;
+}
+#bl_cntr_1{
+    margin-top: 20px;
+    background-color: white;
+}
+
+.nef-dropdown{
+    background-image: url("@{il-standard-icon-path}icon_more.svg") !important;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+    height: 8px;
+    width: 24px;
+    border: none;
+    border-radius: unset !important;
+    &:hover,
+    &:active,
+    &:focus{
+        background-color: transparent !important;
+    }
+
+    span{
+        display: none !important;
+    }
+    
+}
+.nef-btn-group{
+    margin-right: 20px;
+    margin-top: 20px;
+    .open > .dropdown-toggle.btn-default{
+            background-color: transparent !important;
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: transparent !important;
+            }
+        }
+}
+
+//page annuaire
+.ilusersgallerygui, .ilmailsearchgroupsgui,.ilmailsearchcoursesgui {
+    //margin-top: 20px;
+}
+.ilmailinglistsgui{
+    //margin-top: 20px;
+    .ilTabsContentOuter{
+        background-color: white;
+        padding: 0;
+        margin: -2px 20px;
+    }
+}
+.row-eq-height{
+    .col-md-2 {
+            width: 29%;
+            margin-left: 15px;
+        }
+}
+.il-deck{
+    background-color: white;
+    padding: 20px 0px;
+    margin: 0px 5px 5px 5px;
+}
+.il-card {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.12), 0 2px 1px -1px rgba(0,0,0,0.1), 0 1px 3px 0 rgba(0,0,0,0.16);
+    img{
+        height: 100px !important;
+        width: 100px !important;
+        border: 3px solid @primary-color;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 15px;
+    }
+    .card-highlight{
+        display: none;
+    }
+    //caption
+    .card-title{
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .caption{
+        text-align: center;
+        margin: 0px auto;
+        height: 41px;
+        .card-title{
+            color: @Grey-color-87;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 0.12px;
+            line-height: 18px;
+            text-align: center;
+        }
+    }
+}
+
+//add icon to headers
+.ilmembershipoverviewgui{
+    .ilHeader a {
+        background-image: url("@{il-standard-icon-path}icon_cours.svg");
+        background-repeat: no-repeat;
+        padding-left: 26px;
+        background-position-y: 3px;
+    }
+}
+.nef-mailcontent{
+    .media-heading {
+        background-image: url("@{il-standard-icon-path}icon_mail.svg");
+        background-repeat: no-repeat;
+        padding-left: 39px;
+        background-position-y: 25px;
+        background-position-x: 10px;
+    }
+}
+.ilpersonalprofilegui{
+    .media-heading {
+        background-image: url("@{il-standard-icon-path}profil.svg");
+        background-repeat: no-repeat;
+        padding-left: 39px;
+        background-position-y: 17px;
+        background-position-x: 7px;
+    }
+}
+.ilusersgallerygui, .ilmailsearchcoursesgui, .ilmailsearchgroupsgui, .ilmailinglistsgui{
+    .nef-mailcontent{
+        .media-heading {
+            background-image: url("@{il-standard-icon-path}icon_annuaire.svg");
+            background-repeat: no-repeat;
+            padding-left: 39px;
+            background-position-y: 22px;
+            background-position-x: 7px;
+        }
+    }
+}
+.ilmailoptionsgui,.ilmailinglistsgui{
+    .media-heading {
+        background-image: url("@{il-standard-icon-path}icon-annuaire-vert.svg");
+        background-repeat: no-repeat;
+        padding-left: 39px;
+        background-position-y: 13px;
+        background-position-x: 7px;
+    }
+}
+.ilcalendarpresentationgui,.ilcalendaragendalistgui,
+.ilcalendarcategorygui,.ilcalendarusersettingsgui{
+    .media-heading {
+        background-image: url("@{il-standard-icon-path}agenda-icon.svg");
+        background-repeat: no-repeat;
+        padding-left: 39px;
+        background-position-y: 13px;
+        background-position-x: 7px;
+    }
+}
+
+//block catalogue
+.nef-categoriesblock{
+    .ilContainerListItemOuter {
+        /*width: 30%;*/
+    }
+    .il_ContainerItemTitle{
+        background-image: url("@{il-standard-icon-path}icon_folder.svg");
+        background-repeat: no-repeat;
+        padding-left: 9px;
+        background-position-y: 17px;
+        background-position-x: 7px;
+        a{
+            /*display: flex;*/
+            padding-left: 32px;
+            display: block;
+            width: 245px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
+
+// pagination
+#block_pdmail_0 {
+    .il-item-group{
+        padding : unset !important;
+    }
+    .ilHeader {
+        .il-viewcontrol-pagination {
+            margin-top: 15px !important;
+            .browse .glyph{
+                vertical-align: middle;
+                span{
+                    height: 14px !important;
+                    width: 7px !important;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
+
+.il-viewcontrol-pagination .btn-link{
+    border-radius : 50% !important;
+    font-size : 10.5px !important;
+    height: 25px !important;
+    width: 25px !important;
+    padding : unset !important;
+    text-align: center;
+    &:disabled {
+        background-color: @primary-color;
+    }
+}
+
+// badge
+.ilbadgeprofilegui .il-deck{
+    padding-left: 40px;
+}
+
+.ilFrmPostAttachmentsContainer br{
+    display: none;
+}
+
+.ilobjforumgui #ilFrmPostList .ilFrmPostContentContainer .ilFrmPostAttachmentsContainer a:hover{
+    background-color: lightgrey;
+}
+
+div.ilFrmPostAttachmentsContainer a.btn.btn-default:hover{
+    background-color: black !important;
+}
+
+//hitbox dropdown
+.dropdown{
+    cursor: unset !important;
+    .dropdown-toggle{
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+.ilmailgui{
+    .dropdown-menu{
+        padding: 0px;
+        .nef-mailIcon{
+            padding-bottom: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+.nef-categoriesblock div.ilListItemSection.il_Description{
+    display: none;
+}
+
+.nef-categoriesblock{
+    background-color: white !important;
+}
+
+#block_pdmail_0 .panel-body{
+    padding-top: 0px !important;
+}
+
+// dashboard Mail
+.nef-dashboardMail{
+    margin-top: 20px;
+    .il_Block{
+        padding-left: 10px;
+        padding-right: 10px;
+        .ilBlockHeaderBig{
+            padding-bottom: 30px;
+            border-bottom : unset;
+            margin-left: unset;
+            margin-right: unset;
+            h2{
+                color: rgba(38, 38, 38, 0.87);
+                font-size: 24px;
+                font-weight: 600;
+            }
+            .nef-subtitle{
+                left :unset;
+                margin: 42px 0 22px 0px;
+            }
+        }
+        .ilFormRow{
+            display : table-row;
+            .ilFormOption{
+                display : table-cell;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-right: 5px;
+            }
+            .ilFormValue{
+                display : table-cell;
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,220 @@
+.il-maincontrols-metabar {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	.il-metabar-entries {
+		align-items: center;
+		display: flex;
+		height: @il-standard-page-header-height;
+		.il-metabar-entry,
+		.il-logout {
+			padding-left: 10px;
+		}
+	}
+	.glyphicon {
+		font-size: @il-slate-bulky-glyph-size;
+		margin-right: @il-slate-bulky-glyph-margin-right;
+		position: relative;
+	}
+	p {
+		padding: 0;
+	}
+	form#mm_search_form {
+		padding: 20px;
+		background-color:#ffffff;
+	}
+	#ilMMSearchMenu{
+		display: none;
+	}
+	.bulky-label {
+		white-space: normal;
+		margin-top: @il-mainbar-bulky-label-margin-top;
+		display: block;
+	}
+}
+
+.il-metabar-entries {
+	.badge {
+		position: absolute;
+	}
+	.btn {
+		position: relative;
+	}
+	.il-counter-novelty {
+		margin-top: 0;
+		top: 22px;
+	}
+	.il-counter-status {
+		margin-top: 0;
+		top: 32px;
+	}
+	// no display labels in metabar level 1
+	> .btn-bulky > .bulky-label {
+		display: none;
+	}
+	.btn-bulky {
+		background-color: transparent;
+		height: @il-metabar-entry-height;
+		min-width: @il-metabar-entry-width;
+
+		@media only screen and (max-width: @grid-float-breakpoint-max) {
+			height: @il-metabar-small-entry-height;
+			min-width: @il-metabar-small-entry-width;
+		}
+		&:focus,
+		&:active {
+			box-shadow: none;
+		}
+		&.engaged {
+			.shadow-right;
+			background-color: @il-metabar-slates-bg-color;
+			border: none;
+			color: initial;
+			outline-color: transparent;
+		}
+		.glyphicon {
+			color: @il-metabar-glyph-color;
+			font-size: @il-metabar-glyph-size;
+		}
+	}
+
+	@media only screen and (max-width: @grid-float-breakpoint-max) {
+
+		.il-metabar-more-button {
+			padding-right: 20px;
+			.icon.custom {
+				position: relative;
+				img {
+					margin-right: 5px;
+				}
+				.badge {
+					position: absolute;
+					margin-right: 3px;
+					&.il-counter-novelty {
+						margin-top: -5px;
+					}
+					&.il-counter-status {
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.il-metabar-slates {
+	.shadow-right;
+    background-color: @il-metabar-slates-bg-color;
+	position: absolute;
+
+	max-width: @il-metabar-slates-width;
+	//padding: 12px;
+    border-radius: 8px;
+	.il-maincontrols-slate{
+		
+		.icon{
+			filter:invert(100%);
+		}
+		a:hover{
+			background-color:@primary-light-color;
+		}
+		.link-bulky{
+			margin-bottom: -1px !important;
+			background-color: #ffffff;
+			border-radius: 0px;
+		}
+		&.engaged{
+			padding: 12px;
+		}
+		.bulky-label{
+			color: @link-color-grey !important;
+		}
+	}
+	
+	max-height: 90vh;
+	overflow-y: auto;
+	right: 0;
+
+	top: @il-metabar-entry-height;
+
+	@media only screen and (max-width: @grid-float-breakpoint-max) {
+		width: 100%;
+		top: @il-metabar-small-entry-height;
+		right: 0;
+	}
+	/*TODO: remove hack*/
+	.il-maincontrols-slate {
+		@media only screen and (max-width: @grid-float-breakpoint-max) {
+			min-width: 260px;
+		}
+	}
+	/*end of hack*/
+
+	.il-maincontrols-slate-content {
+		 /*font-size: 16px;
+    margin-left: 37px;*/
+    /*.link-bulky{
+        padding: 0!important;
+    }*/
+    	border-radius: 3px;
+    	.il-maincontrols-slate-notification{
+    		a:hover{
+    			background-color: @il-metabar-slates-bg-color !important;
+    		}
+    	}
+    	.icon{
+			img{
+				filter: invert(100%);
+				margin-left: -2px;
+    			margin-top: -2px;
+			}
+		}
+	}
+}
+
+.il-header-locator {
+	display: none;
+}
+
+@media only screen and (max-width: @grid-float-breakpoint-max) {
+	.il-header-locator {
+		display: block;
+	}
+	.il-metabar-entries {
+		.il-counter-novelty {
+			top: 7px;
+		}
+		.il-counter-status {
+			top: 22px;
+		}
+	}
+	.il-metabar-slates {
+		.glyphicon {
+			color: @il-metabar-glyph-color;
+			font-size: @il-metabar-small-glyph-size;
+		}
+		.il-counter-status,
+		.il-counter-novelty {
+			margin-top: 0;
+			top: 5px
+		}
+		.bulky-label {
+			margin-left: 10px;
+		}
+		.il-counter-spacer {
+			margin-left: -18px;
+		}
+	}
+	.il-metabar-more-slate{
+		.btn-bulky:after {
+			content: "\e606";
+
+			font-family: "il-icons";
+			font-size: @il-slate-bulky-glyph-size * 0.85;
+			position: absolute;
+			right: 10px;
+			top: 20px;
+		}
+	}
+}
+/*end of hack*/

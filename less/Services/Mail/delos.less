@@ -1,0 +1,72 @@
+/* Services/Mail */
+.table-striped{
+    border-collapse: collapse !important;
+    tbody > tr:nth-of-type(even){
+    	background-color:@table-background-color;
+    }
+    tbody > tr:nth-of-type(odd){
+    	background-color:white;
+    }
+}
+
+a.mailread, a.mailread:visited {
+	font-weight: normal;
+}
+
+a.mailunread, a.mailunread:visited {
+	//font-weight: bold;
+}
+
+tr.nef-mailunread{
+	background-color: @secondary-color-38 !important;
+	border: 2px solid @secondary-color-67;
+	font-weight: 600;
+}
+#mail_folder_tbl_3{
+	thead > tr > th{
+		font-size: 11px;
+	    letter-spacing: 0.33px;
+	    line-height: 16px;
+	    border: none !important;
+	}
+	tbody > tr > td
+	{
+	    border: none !important;
+	}
+	.ilFormCmds{
+		display: none;
+	}
+}
+.nef-mailread, .nef-mailunread
+{
+	input[type="checkbox"]{
+		margin-top:10px;
+	}
+	.dropdown{
+		padding-top: 9px;
+	}
+}
+
+.iosMailFilter .checkbox {
+	display: inline-block !important;
+	margin: 0 10px !important;
+}
+
+.iosMailFilter .checkbox:first-child {
+	margin: 0 15px !important;
+}
+
+.iosMailFilter .checkbox input[type="checkbox"] {
+	margin-left: -15px !important;
+}
+
+.ilMailAvatar {
+	min-width: 45px !important;
+	max-width: 45px !important;
+	height: auto;
+}
+.nef-mailcontent{
+	.table > thead > tr > th{
+		border-bottom: none;
+	}
+}

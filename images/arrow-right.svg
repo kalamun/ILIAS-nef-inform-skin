@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="12px" viewBox="0 0 8 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Catalogue Copy</title>
+    <g id="Maquette" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Messagerie-action" transform="translate(-984.000000, -816.000000)" fill-rule="nonzero">
+            <g id="Group" transform="translate(740.000000, 810.000000)">
+                <g transform="translate(236.000000, 0.000000)" id="Icon-/-Catalogue-Copy">
+                    <g transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) " id="↳-📍icon-/-DropDown">
+                        <rect id="Rectangle" opacity="0" x="0" y="0" width="24" height="24"></rect>
+                        <path d="M6.29289322,10.2071068 L11.2928932,15.2071068 C11.6834175,15.5976311 12.3165825,15.5976311 12.7071068,15.2071068 L17.7071068,10.2071068 C18.3370716,9.57714192 17.8909049,8.5 17,8.5 L7,8.5 C6.10909515,8.5 5.66292836,9.57714192 6.29289322,10.2071068 Z" id="Path" fill="#262626" opacity="0.54"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

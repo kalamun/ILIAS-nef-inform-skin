@@ -1,0 +1,171 @@
+//page profils
+.ilpersonalprofilegui{
+	//margin: 20px 0;
+	#il_center_col {
+	    width: 75%;
+	}
+	#ilTab{
+	    padding-top: 15px;
+	}
+	#ilContentContainer{
+		.row{
+			width: 100%;
+			float: left;
+		}
+		.col-sm-9{
+			//width: 100%;
+		}
+	}
+	div.ilContentFixed {
+	    background: white;
+	    margin: 20px;
+	}
+	img{
+		border-radius: 50%;
+	}
+	.form-horizontal {
+		.control-label{
+			text-align: left;
+			width: 30%;
+		}
+		.col-sm-9{
+			width: 70%;
+		}
+		.form-control{
+			height: 30px;
+		}
+	}
+
+    .glyphicon-plus,.glyphicon-minus{
+    	border: 1px solid rgba(38, 38, 38, 0.87);
+	    border-radius: 50%;
+	    width: 24px;
+	    height: 24px !important;
+	    top: -7px;
+	    padding: 5px 8px;
+	}
+}//end
+.iluserprivacysettingsgui{
+	#ilTab{
+	    padding-top: 15px;
+	}
+	div.ilContentFixed {
+	    background: white;
+	    margin: 20px;
+	}
+}
+
+
+
+#ilTab a{
+	font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+    color: @Grey-color-87;
+}
+
+//page agenda
+.ilcalendarpresentationgui, .ilcalendaragendalistgui,
+.ilcalendarcategorygui, .ilcalendarweekgui,
+.ilcalendarmonthgui, .ilcalendarinboxgui,.ilcalendardaygui{
+	#il_center_col {
+	    padding-top: 20px;
+	}
+	.ilToolbar.navbar {
+	    border-radius: 5px 5px 0 0;
+	    margin: 1px 5px -21px;
+	}
+	#block_cal_sel_0{
+		display: none;
+	}
+	.ilToolbarSeparator {
+		display: none;
+	}
+	h3.ilHeader{
+		background: white;
+	    padding-top: 30px;
+	    margin: 0 5px;
+	    padding-right: 18%;
+	    padding-left: 20px;
+	    padding-bottom: 15px;
+	    font-size: 14px;
+	}
+	.il-cal-day, .il-cal-month, .il-cal-week {
+		margin: 2px 5PX;
+	    width: 99%;
+	    /* background: white; */
+	    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 12%), 0 2px 1px -1px rgb(0 0 0 / 10%), 0 1px 3px 0 rgb(0 0 0 / 16%);
+	    .il_calevent{
+	    	//background-color: rgba(94,126,79,0.87) !important;
+	    	background-color: @secondary-color!important;
+	    	.btn{
+	    		
+	    		height: 100% !important;
+	    	}
+	    }
+	    .caltoday{
+	    	background-color: @primary-light-color-67 !important;
+	    }
+	}//end calheader
+	.media-heading {
+        background-image: url("@{il-standard-icon-path}agenda-icon.svg");
+        background-repeat: no-repeat;
+        padding-left: 39px;
+        background-position-y: 13px;
+        background-position-x: 7px;
+    }
+}
+.ilcalendarcategorygui{
+	.tblheader{
+		.glyphicon
+		{
+			display: none !important;
+		}
+	}
+	.std{
+		span:first-child{
+			display: none;
+		}
+	}
+	
+}
+//page ressources partagées#
+.ilpersonalworkspacegui,.ilobjworkspacerootfoldergui{
+	.ilFloatRight{
+		.dropdown-toggle{
+		    background-image: url("@{il-standard-icon-path}icon_more.svg") !important;
+		    background-repeat: no-repeat;
+		    background-color: transparent !important;
+		    height: 8px;
+		    width: 24px;
+		    border: none;
+		    border-radius: unset !important;
+		    top: 17px;
+    		margin-right: 15px;
+		    &:hover,
+		    &:active,
+		    &:focus{
+		        background-color: transparent !important;
+		    }
+
+		    span{
+		        display: none !important;
+		    }
+		    
+		}
+	}
+}
+//page password
+#il_prop_cont_current_password,#il_prop_cont_new_password{
+	.form-control {
+    	border-radius: 5px !important;
+	}
+}
+
+//mail folder
+.ilmailfoldergui{
+	 form.form-horizontal{
+	 	margin-top: 11px;
+	 }
+}
