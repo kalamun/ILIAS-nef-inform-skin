@@ -67,16 +67,7 @@ export default class NefPage{
         // notif logo at the end of the list
         $('.il-metabar-more-button').before(metabarEntries.find('[aria-label="Notifications"]').parent());
 
-        // // refactore search
-        metabarEntries.find('[aria-label="Rechercher"]').parent().remove();
-        metabarMoreSlate.find('[aria-label="Rechercher"]').parent().remove();
-        let search = metabarSlates.find('#mm_search_form');
-        let searchDiv = search.parent().parent();
-        $('.il-metabar-entries').prepend(search);
-        searchDiv.remove();
-        search.find('#main_menu_search').attr('placeholder', 'Rechercher par mots clés');
-
-        // // remove online contact
+          // // remove online contact
         metabarEntries.find('[aria-label="Show who is online"]').parent().remove();
         metabarMoreSlate.find('[aria-label="Show who is online"]').parent().remove();
         metabarSlates.find('#awareness-content').parent().parent().remove();
