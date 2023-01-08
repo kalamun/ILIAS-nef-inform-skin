@@ -1121,14 +1121,9 @@ a {
   color: #557196;
   text-decoration: none;
 }
-a:hover,
-a:focus {
+a:hover {
   color: #3a4c65;
   text-decoration: underline;
-}
-a:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
 }
 figure {
   margin: 0;
@@ -1625,6 +1620,10 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+div.ilc_page_frame_PageFrame {
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .row {
   margin-right: -15px;
@@ -5538,6 +5537,7 @@ button.list-group-item-danger.active:focus {
 }
 .panel-body {
   padding: 15px;
+  background: #f8f8f8;
 }
 .panel-heading {
   padding: 9px 12px;
@@ -6853,7 +6853,7 @@ button.close {
 }
 .panel {
   border: none;
-  margin: 0 5px;
+  margin: 20px 5px;
   padding: 0;
   background-color: transparent;
 }
@@ -6899,9 +6899,6 @@ button.close {
 .panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle,
 .panel .panel-heading.ilBlockHeader .dropdown > button.dropdown-toggle {
   color: white;
-}
-.panel .panel-body {
-  padding: 0;
 }
 .panel-flex .panel-heading {
   display: flex;
@@ -8864,6 +8861,10 @@ grid-based layout
   overflow: hidden;
   width: 100%;
 }
+.il-layout-page .il-mainbar a,
+.il-layout-page .il-mainbar button {
+  outline: none !important;
+}
 .il-layout-page .il-maincontrols-mainbar .il-mainbar-close-slates {
   display: none;
 }
@@ -8959,8 +8960,8 @@ main {
   -ms-grid-row: 3;
   grid-column: 2;
   grid-row: 3;
-  overflow: auto;
   outline: none;
+  overflow: auto;
 }
 /* Footer */
 footer {
@@ -9260,7 +9261,7 @@ footer {
 .il-maincontrols-slate .btn-bulky.engaged,
 .il-maincontrols-slate .link-bulky.engaged {
   background-color: transparent;
-  color: inherit;
+  color: #fff;
 }
 .il-maincontrols-slate .btn-bulky .icon,
 .il-maincontrols-slate .link-bulky .icon {
@@ -9658,7 +9659,6 @@ footer {
 .il-mainbar-triggers .btn-bulky.engaged,
 .il-mainbar-triggers .il-link.link-bulky.engaged {
   background-color: transparent;
-  color: rgba(38, 38, 38, 0.87);
 }
 .il-mainbar-triggers .btn-bulky.engaged .glyph,
 .il-mainbar-triggers .il-link.link-bulky.engaged .glyph {
@@ -12110,6 +12110,37 @@ header .header-inner .il-logo img {
 .nef-SelectedMenuItem {
   background-color: rgba(218, 136, 0, 0.38) !important;
 }
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .jstree-container-ul {
+  margin: 10px 0 0 10px;
+}
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .jstree.jstree-default a {
+  color: #fff !important;
+  padding: 3px 0;
+}
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .jstree img {
+  filter: saturate(0);
+}
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .panel {
+  margin: 10px 0 0 0;
+}
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .panel-body {
+  background: transparent;
+  padding: 0 0 0 40px;
+}
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .panel-body .il-item-group {
+  margin: 0 !important;
+}
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .panel-body .il-item-group .il-item {
+  background: transparent;
+  padding: 0;
+  margin: 5px 0;
+}
+.nef-mainbar-element .il-maincontrols-slate .il-maincontrols-slate-content .panel-body .il-item-group .il-item a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+}
+
 /**body**/
 /**panel**/
 .panel .panel-heading.ilHeader h2,
@@ -12280,6 +12311,9 @@ img[alt="login"] {
 .il-maincontrols .il-maincontrols-mainbar .il-mainbar .il-mainbar-triggers .bulky-label {
   color: #ffffff;
   text-align: left;
+}
+.il-maincontrols .il-maincontrols-mainbar .il-mainbar .il-mainbar-triggers .il-maincontrols-slate .bulky-label {
+  padding: 0 3px;
 }
 .il-maincontrols .il-maincontrols-mainbar .il-mainbar .il-mainbar-triggers .btn-bulky,
 .il-maincontrols .il-maincontrols-mainbar .il-mainbar .il-mainbar-triggers .il-link.link-bulky {
@@ -12627,6 +12661,8 @@ div.ilFrmPostAttachmentsContainer a.btn.btn-default:hover {
 .dropdown .dropdown-toggle {
   padding: 10px;
   cursor: pointer;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .ilmailgui .dropdown-menu {
   padding: 0px;
@@ -12640,9 +12676,6 @@ div.ilFrmPostAttachmentsContainer a.btn.btn-default:hover {
 }
 .nef-categoriesblock {
   background-color: white !important;
-}
-#block_pdmail_0 .panel-body {
-  padding-top: 0px !important;
 }
 .nef-dashboardMail {
   margin-top: 20px;
@@ -13677,10 +13710,11 @@ div.ilAdminRow {
   margin-bottom: 0;
 }
 .ilToolbarContainer {
-  float: right;
-  margin: -3em 0 0;
-  text-align: right;
+  margin: 0 5px;
   width: auto;
+}
+.il-layout-page-content .ilToolbarContainer {
+  margin: 0 5px 0;
 }
 .ilToolbarContainer .container-fluid {
   display: flex;
@@ -18617,8 +18651,8 @@ div#il_startup_logo img {
   border: 0 none;
   background-color: white;
   border-radius: 0;
-  margin: 0 5px 20px;
-  padding: 0 15px;
+  margin: 0;
+  padding: 0 25px;
 }
 .ilToolbar .ilToolbarItems {
   padding: 0;
@@ -18660,10 +18694,6 @@ div#il_startup_logo img {
 }
 .ilToolbar li.ilToolbarGroup .navbar-text {
   margin-right: 0;
-}
-.ilToolbar .ilToolbarStickyItems {
-  float: left;
-  margin-left: 15px;
 }
 .ilToolbar .ilToolbarStickyItems.navbar-nav {
   margin-top: 0;
