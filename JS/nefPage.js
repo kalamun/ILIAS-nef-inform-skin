@@ -44,12 +44,9 @@ export default class NefPage{
             }
         });
 
-        // delete slates group
-        $('.il-mainbar-slates').remove();
-
         // --------------------- MAINBAR FOOTER --------------------
         //move footer content
-        $('.il-maincontrols-mainbar').after($('.il-footer-content'))
+        $('.il-maincontrols-mainbar .il-mainbar').append($('.il-footer-content'))
         // delete old footer
         $('footer').remove();
 
