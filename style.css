@@ -7415,6 +7415,9 @@ fieldset[disabled] .btn.btn-tag.active {
 }
 button > .glyphicon {
   pointer-events: none;
+  filter: brightness(10);
+  display: inline-block;
+  transform: translateY(-4px);
 }
 a[disabled],
 a fieldset[disabled] ,
@@ -7581,9 +7584,10 @@ ul.dropdown-menu {
   background-color: white;
   font-weight: normal;
   border: 0 none;
-  right: 0 !important;
   top: 5px !important;
+/*   right: 0 !important;
   left: auto !important;
+ */
   -webkit-box-shadow: 3px 9px 9px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 3px 9px 9px 0 rgba(0, 0, 0, 0.3);
 }
@@ -12747,6 +12751,7 @@ div.ilFrmPostAttachmentsContainer a.btn.btn-default:hover {
 }
 .dropdown {
   cursor: unset !important;
+  display: inline-block;
 }
 .dropdown .dropdown-toggle {
   padding: 10px;
@@ -12807,6 +12812,12 @@ div.ilFrmPostAttachmentsContainer a.btn.btn-default:hover {
 .ilrepositorygui #il_center_col {
   /*margin-left: 5px;
     	margin-right: -5px;*/
+}
+#ilContentContainer > .row > #il_center_col {
+  background: var(--fbc-white);
+  margin: 0 20px;
+  width: calc(100% - 40px);
+  padding: 10px 30px;
 }
 .ilrepositorygui .ilContainerBlock {
   width: 100%;
@@ -15487,9 +15498,6 @@ div.il_droparea {
   font-size: 14px;
   background-color: #fcfcfc;
   cursor: pointer;
-}
-div.il_droparea + .dropdown {
-  display: none;
 }
 div.il_droparea:hover,
 div.ilCOPGDropActice,
