@@ -6892,8 +6892,10 @@ button.close {
 }
 .panel .panel-heading.ilHeader .dropdown,
 .panel .panel-heading.ilBlockHeader .dropdown {
-  float: right;
+/*   float: right;
   margin-top: 11px;
+ */  position: absolute;
+  right: 0;
   cursor: pointer;
 }
 .panel .panel-heading.ilHeader .dropdown > button.dropdown-toggle,
@@ -7079,7 +7081,7 @@ button.close {
   padding-top: 6px;
 }
 .il-card .il-card-repository-head {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -7088,7 +7090,7 @@ button.close {
   padding: 0 6px;
 }
 .il-card .il-card-repository-head .icon.outlined {
-  filter: invert(1) saturate(0);
+  filter: saturate(0);
   height: 2.5em !important;
   width: auto !important;
   border: 0;
@@ -7115,8 +7117,7 @@ button.close {
   padding: 9px 6px;
 }
 .il-card .il-card-repository-head > div.il-card-repository-dropdown > .dropdown > button {
-  background-color: inherit;
-  border: #e0e0e0 1px solid;
+  border: none;
   width: 29px;
   height: 29px;
 }
@@ -9295,11 +9296,14 @@ footer {
 .il-maincontrols-slate .btn-bulky,
 .il-maincontrols-slate .link-bulky {
   align-items: flex-start;
-  background-color: rgba(38, 38, 38, 0.87);
+  background-color: transparent;
   border: none;
   display: flex;
   margin-bottom: 2px;
   position: relative;
+  width: 100%;
+  padding: 0.5em 0;
+  height: auto;
 }
 .il-maincontrols-slate .btn-bulky.engaged:after,
 .il-maincontrols-slate .link-bulky.engaged:after,
@@ -9322,7 +9326,7 @@ footer {
 .il-maincontrols-slate .btn-bulky.engaged,
 .il-maincontrols-slate .link-bulky.engaged {
   background-color: transparent;
-  color: #fff;
+  color: #C45A20;
 }
 .il-maincontrols-slate .btn-bulky .icon,
 .il-maincontrols-slate .link-bulky .icon {
@@ -9344,6 +9348,7 @@ footer {
   line-height: 1.7rem;
   text-align: left;
   word-break: normal;
+  flex-grow: 2;
 }
 .il-maincontrols-slate .il-maincontrols-slate .btn-bulky {
   background-color: #f9f9f9;
@@ -9491,7 +9496,7 @@ footer {
 }
 .il-maincontrols-metabar form#mm_search_form {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: transparent;
 }
 .il-maincontrols-metabar #ilMMSearchMenu {
   display: none;
@@ -9522,6 +9527,9 @@ footer {
   background-color: transparent;
   height: 73px;
   min-width: 60px;
+}
+.il-metabar-entries .btn-bulky:last-of-type {
+  min-width: 0;
 }
 @media only screen and (max-width: 0px) {
   .il-metabar-entries .btn-bulky {
@@ -9667,6 +9675,9 @@ footer {
 .il-maincontrols-metabar .link-bulky {
   font-size: 18px;
   line-height: 23.94px;
+}
+.il-maincontrols-metabar .btn-bulky:last-of-type .glyph {
+  display: none;
 }
 .il-maincontrols-mainbar .btn-bulky:focus,
 .il-maincontrols-metabar .btn-bulky:focus,
@@ -12357,15 +12368,11 @@ img[alt="login"] {
   height: 30px;
 }
 .nef-subtitle {
-  width: 90%;
+  width: 100%;
   display: flex;
   text-transform: uppercase;
   font-size: 10px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* text-align: center; */
-  margin: 48PX 0 22px 16px;
+  margin: 2px 0 0 28px;
   padding-right: 11px;
 }
 .panel {
@@ -12818,6 +12825,9 @@ div.ilFrmPostAttachmentsContainer a.btn.btn-default:hover {
   margin: 0 20px;
   width: calc(100% - 40px);
   padding: 10px 30px;
+}
+.ildashboardgui #ilContentContainer > .row > #il_center_col {
+  width: calc(75% - 40px);
 }
 .ilrepositorygui .ilContainerBlock {
   width: 100%;

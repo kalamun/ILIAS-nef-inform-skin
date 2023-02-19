@@ -61,6 +61,15 @@ export default class NefPage{
         let metabarSlates = $('.il-metabar-slates')
         let metabarMoreSlate = metabarSlates.find('.il-metabar-more-slate');
 
+        // // refactore search
+        metabarEntries.find('[aria-label="Rechercher"]').parent().remove();
+        metabarMoreSlate.find('[aria-label="Rechercher"]').parent().remove();
+        let search = metabarSlates.find('#mm_search_form');
+        let searchDiv = search.parent().parent();
+        $('.il-metabar-entries').prepend(search);
+        searchDiv.remove();
+        search.find('#main_menu_search').attr('placeholder', 'Rechercher par mots clés');
+        
         // notif logo at the end of the list
         $('.il-metabar-more-button').before(metabarEntries.find('[aria-label="Notifications"]').parent());
 
