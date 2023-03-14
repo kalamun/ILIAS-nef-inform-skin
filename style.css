@@ -7416,7 +7416,7 @@ fieldset[disabled] .btn.btn-tag.active {
 }
 button > .glyphicon {
   pointer-events: none;
-  filter: brightness(10);
+  filter: contrast(100) invert() brightness(100);
   display: inline-block;
   transform: translateY(-4px);
 }
@@ -7618,8 +7618,8 @@ ul.dropdown-menu > li > .btn:focus {
   background-color: #ecf0f4;
 }
 .il-maincontrols-slate-content .dropdown-menu {
-  right: 0;
-  left: inherit;
+  right: inherit;
+  left: 0;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -8857,7 +8857,7 @@ grid-based layout
 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body {
-    background-image: url("../../templates/default/images/HeaderIcon.svg");
+    background-image: url("../../templates/default/images/logo/logo-inForm.svg");
     background-position: center 43%;
     background-repeat: no-repeat;
     display: -ms-flexbox;
@@ -12388,8 +12388,9 @@ img[alt="login"] {
 .il-maincontrols {
   background-color: rgba(38, 38, 38, 0.87);
   padding: 0;
-  overflow: auto;
   min-width: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .il-maincontrols .il-maincontrols-mainbar {
   min-height: 100%;
@@ -20747,4 +20748,35 @@ table.mceToolbar td {
 }
 .ilobjforumgui .dropdown-menu li > a:hover {
   border-radius: 30px;
+}
+
+
+
+#add,
+div[data-copg-ed-type="add-area"] {
+  text-align: center;
+  padding: 4px;
+  border: 2px solid transparent;
+}
+#add:hover,
+div[data-copg-ed-type="add-area"]:hover {
+  background: #f4f4f4;
+  border: 2px dashed #ddd;
+}
+.il-maincontrols-slate-content label {
+  font-weight: bold;
+}
+.il-maincontrols-slate-content :is(.col-sm-3, .col-sm-9) {
+  width: 100%;
+  text-align: left !important;
+  padding: 0;
+}
+.copg-new-content-placeholder {
+  text-align: center;
+}
+.copg-edit-container {
+  text-align: center;
+}
+.il-maincontrols-metabar[role="menubar"] .il-link.link-bulky {
+  display: block !important;
 }
