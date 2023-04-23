@@ -1,6 +1,6 @@
-import NefPage from "./nefPage.js"
+import NefPageEdit from "./nefPageEdit.js"
 
-export default class CoursDetail extends NefPage {
+export default class CoursDetail extends NefPageEdit {
     constructor(baseClassIdentifier, cmdClassIdentifier){
         super(baseClassIdentifier, cmdClassIdentifier);
         super.addTitleIcon("h2", "Agenda", "./Customizing/global/skin/nef-inform/images/agenda-icon.svg", "aperçu de votre planning de formation")

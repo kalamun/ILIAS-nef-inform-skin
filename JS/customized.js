@@ -1,6 +1,7 @@
 import Dashboard from "./dashboard.js"
 import MailPage from "./mailPage.js";
 import NefPage from "./nefPage.js";
+import NefPageEdit from "./nefPageEdit.js";
 import Catalogue from "./catalogue.js";
 import CoursDetail from "./coursDetails.js";
 import forumPage from "./forumPage.js";
@@ -62,7 +63,7 @@ jQuery(function() {
             if(cmd === "showthreads" || cmd === "viewthread")
                 currentPage = new forumPage(baseClass, cmdClass);
             else
-                currentPage = new CoursDetail(baseClass, cmdClass);
+                currentPage = new NefPageEdit(baseClass, cmdClass); // new CoursDetail(baseClass, cmdClass);
             break;
         case "ilmembershipoverviewgui":
             if(cmdClass === "ilmembershipoverviewgui")
@@ -79,5 +80,5 @@ jQuery(function() {
     }
 
     // create current Page
-    currentPage.refactorHTML();
+    currentPage?.refactorHTML();
 });
