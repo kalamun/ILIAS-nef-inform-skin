@@ -71,7 +71,7 @@ export default class NefPage{
         search.find('#main_menu_search').attr('placeholder', 'Rechercher par mots clés');
         
         // notif logo at the end of the list
-        $('.il-metabar-more-button').before(metabarEntries.find('[aria-label="Notifications"]').parent());
+        //$('.il-metabar-more-button').before(metabarEntries.find('[aria-label="Notifications"]').parent());
 
           // // remove online contact
         metabarEntries.find('[aria-label="Show who is online"]').parent().remove();
