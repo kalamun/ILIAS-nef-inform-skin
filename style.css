@@ -12593,10 +12593,12 @@ img[alt="login"] {
 .nef-dropdown span {
   display: none !important;
 }
+/*
 .nef-btn-group {
   margin-right: 20px;
   margin-top: 20px;
 }
+*/
 .nef-btn-group .open > .dropdown-toggle.btn-default {
   background-color: transparent !important;
 }
@@ -12702,8 +12704,9 @@ img[alt="login"] {
   background-position-y: 13px;
   background-position-x: 7px;
 }
+/* 
 .nef-categoriesblock .ilContainerListItemOuter {
-  /*width: 30%;*/
+  width: 30%;
 }
 .nef-categoriesblock .il_ContainerItemTitle {
   background-image: url("images/icon_folder.svg");
@@ -12713,7 +12716,6 @@ img[alt="login"] {
   background-position-x: 7px;
 }
 .nef-categoriesblock .il_ContainerItemTitle a {
-  /*display: flex;*/
   padding-left: 32px;
   display: block;
   width: 245px;
@@ -12721,6 +12723,7 @@ img[alt="login"] {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+*/
 #block_pdmail_0 .il-item-group {
   padding: unset !important;
 }
@@ -18190,9 +18193,11 @@ div.ilContainerListItemContent {
   vertical-align: top;
   width: 100%;
 }
+/*
 .nef-categoriesblock div.ilContainerListItemContent {
   width: 310px !important;
 }
+*/
 [dir="rtl"] div.ilContainerListItemContent {
   /* margin-left: 0;
 	margin-right: 35px; */
@@ -18488,9 +18493,11 @@ div.ilCreationFormSection .form-horizontal {
 .ilObjListRow {
   background-color: white;
 }
+/*
 .nef-categoriesblock .ilObjListRow {
   display: inline-block !important;
 }
+*/
 .table-striped {
   border-collapse: separate;
 }
