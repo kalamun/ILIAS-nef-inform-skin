@@ -7416,9 +7416,11 @@ fieldset[disabled] .btn.btn-tag.active {
 }
 button > .glyphicon {
   pointer-events: none;
-  filter: contrast(100) invert() brightness(100);
   display: inline-block;
   transform: translateY(-4px);
+}
+button:not(.btn-link) > .glyphicon {
+  filter: contrast(100) invert() brightness(100);
 }
 a[disabled],
 a fieldset[disabled] ,
@@ -7471,6 +7473,9 @@ a fieldset[disabled] .active {
   text-align: left;
   white-space: normal;
   color: #262626;
+}
+table td > .btn-link {
+  padding: 3px;
 }
 .btn-bulky {
   width: 100%;
