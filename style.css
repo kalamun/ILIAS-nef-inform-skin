@@ -17575,11 +17575,13 @@ input.ilMainMenuSearch {
 #il_search_toolbar div.ilFormFooter {
   display: none;
 }
+#mm_search_menu_ac {
+  position: relative;
+}
 #mm_search_menu_ac .ui-menu {
-  border: 0 none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  position: absolute !important;
   color: #333333;
+  border: 1px solid #ccc;
 }
 span.ilSearchHighlight {
   font-weight: bold;
