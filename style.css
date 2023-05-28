@@ -7990,9 +7990,9 @@ ul.dropdown-menu > li > .btn:focus {
   max-height: 800px;
 }
 .il-chart-progressmeter-box .il-chart-progressmeter-container .il-chart-progressmeter-viewbox .il-chart-progressmeter-circle-bg {
-  stroke: #dddddd;
+  stroke: #d9bbbb;
   fill: none;
-  stroke-width: 6;
+  stroke-width: 5;
   stroke-linecap: round;
 }
 .il-chart-progressmeter-box .il-chart-progressmeter-container .il-chart-progressmeter-viewbox .il-chart-progressmeter-circle {
@@ -14175,7 +14175,7 @@ div.il_TreeIcons {
 #current_perma_link {
   color: #333333;
   font-size: 90%;
-  display: none;
+  /* display: none; */
 }
 a.permalink_label > span.glyphicon {
   display: none;
@@ -18191,8 +18191,8 @@ div.ilContainerListItemIconCB {
 }
 div[class^="il_editarea"] .ilContainerListItemOuter img,
 img.ilListItemIcon {
-  width: 35px;
-  height: 35px;
+  width: 70px;
+  height: 70px;
   max-width: none;
 }
 div.ilContainerListItemContent {
