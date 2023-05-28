@@ -12180,6 +12180,32 @@ header .header-inner .il-logo img {
   outline: none;
   background-position: center;
 }
+#mainscrolldiv div.il_editarea .btn.copg-add,
+#mainscrolldiv div.dropdown .btn.copg-add {
+  background: #fff;
+  border-color: #ddd;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+#mainscrolldiv div.il_editarea .btn.copg-add > .glyphicon.glyphicon-plus-sign,
+#mainscrolldiv div.dropdown .btn.copg-add > .glyphicon.glyphicon-plus-sign {
+  filter: none !important;
+  width: 24px;
+  height: 24px;
+  margin-left: 0;
+  top: 0;
+  background-size: 17px;
+  background-position: center center;
+  transform: none !important;
+}
+#mainscrolldiv div.il_editarea .btn.copg-add > .glyphicon.glyphicon-plus-sign::before,
+#mainscrolldiv div.dropdown .btn.copg-add > .glyphicon.glyphicon-plus-sign::before {
+  display: none;
+}
+
 .btn-bulky.engaged,
 .btn-bulky:hover,
 .link-bulky {
@@ -15585,6 +15611,11 @@ div.ilEditLabel {
   border-style: solid;
   border-width: 0 1px 1px 0;
   border-color: #909090;
+  display: none;
+  z-index: 1000;
+}
+div.il_editarea:hover > div.ilEditLabel {
+  display: block;
 }
 div.ilEditVAccordCntr {
   margin-top: 15px;
