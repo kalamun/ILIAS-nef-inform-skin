@@ -9732,6 +9732,7 @@ footer {
   filter: brightness(0) invert(1);
   width: 26px;
   padding-top: 1px;
+  background: transparent;
 }
 .il-mainbar-triggers .btn-bulky.engaged,
 .il-mainbar-triggers .il-link.link-bulky.engaged {
@@ -18349,6 +18350,9 @@ div#ilContRepIntro img {
   background-color: white;
   text-align: center;
   margin: 0 -15px;
+}
+.ilContainerTileRows .il-card-repository-head > div:first-child {
+  display: none;
 }
 /* Modules/LearningModule */
 .ilLMMenu {
